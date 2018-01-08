@@ -29,9 +29,9 @@ const schema = {
   }
 }
 
-const lastInput = '';
-const player = '';
-const count = 0;
+let lastInput = '';
+let player = '';
+let count = 0;
 
 const renderBoard = () => {
   for (let i = 0; i < board.length; i++) {
@@ -95,10 +95,10 @@ const checkForWin = () => {
 }
 
 const playTTT = () => {
-  while (count < 9) {
+  // while (count < 9) {
     console.log(`${player.input}'s turn`);
     takeTurn();
-  }
+  // }
 };
 
 playTTT();
